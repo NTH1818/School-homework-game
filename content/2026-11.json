@@ -1,0 +1,555 @@
+{
+  "month": "2026-11",
+  "title": { "fi": "Marraskuu 2026", "en": "November 2026" },
+  "collection": {
+    "title": { "fi": "Marraskuun metsä", "en": "November forest" },
+    "creatures": ["🦊","🦉","🐿️","🦔","🐇","🦌","🐻","🦡","🐸","🐌","🐞","🦋","🐝","🐦","🦆","🐢","🦎","🐁","🦇","🐺","🦫","🐛","🐤","🦢","🐟","🦜","🐧","🦩","🐨","🐼"]
+  },
+  "daily": [
+    { "id": "read-self", "fi": "Lue itse tai jollekulle perheestä 📖", "en": "Read by yourself or to someone in your family 📖" },
+    { "id": "read-to-me", "fi": "Valitse tarina, jonka joku lukee sinulle 📚", "en": "Choose a story for someone to read to you 📚" }
+  ],
+  "skillNames": {
+    "cal:nov": "November & special days", "remembrance": "Remembrance Day", "trace:num": "Writing numbers",
+    "days:next": "Days of the week (what comes next)", "days:order": "Days of the week (order)", "months:next": "Months of the year",
+    "sentence:animal": "Sentence: animals", "sentence:house": "Sentence: my house", "sentence:school": "Sentence: school",
+    "sentence:toy": "Sentence: toys", "sentence:riddle": "Sentence: riddle", "sentence:red": "Sentence: colours",
+    "word:animals": "Words: animals", "word:home": "Words: house", "word:school": "Words: school", "word:toys": "Words: toys",
+    "rhyme:ack": "Rhymes with back", "build:ack": "Build -ack words", "rhyme:ill": "Rhymes with Bill", "build:ill": "Build -ill words",
+    "rhyme:ot": "Rhymes with hot", "build:ot": "Build -ot words",
+    "start:d": "Sound d", "find:d": "Find d things", "trace:d": "Write d",
+    "start:r": "Sound r", "find:r": "Find r things", "trace:r": "Write r",
+    "start:v": "Sound v", "find:v": "Find v things", "trace:v": "Write v",
+    "start:w": "Sound w", "find:w": "Find w things", "trace:w": "Write w",
+    "start:o": "Sound o (octopus)", "find:o": "Find o things", "trace:o": "Write o",
+    "start:y": "Sound y (yes)", "find:y": "Find y things", "trace:y": "Write y",
+    "start:z": "Sound z", "find:z": "Find z things", "trace:z": "Write z",
+    "sub10": "Subtraction within 10", "add10": "Addition within 10",
+    "take5": "Take away (counting, to 5)", "add5": "Adding (counting, to 5)", "count5": "Counting to 5", "count10": "Counting to 10",
+    "poppies": "Counting poppies", "shape:rect": "Rectangles", "rect:things": "Rectangle things",
+    "hundred": "Counting to 100", "riddle": "Riddles", "color:red": "Red things", "count:stars": "Counting stars"
+  },
+  "days": [
+    {
+      "day": 1,
+      "sheet": "Print today's date. What is a special day in November?",
+      "title": { "fi": "Päivämäärä ja marraskuun erityinen päivä", "en": "Today's date and a special day in November" },
+      "leo": [
+        { "type": "pick", "mode": "custom", "skill": "cal:nov", "count": 3, "shuffle": false, "choices": 3, "items": [
+          { "q": { "fi": "Mikä on erityinen päivä marraskuussa?", "en": "What is a special day in November?" },
+            "choices": ["Remembrance Day", "Christmas", "Halloween", "birthday"], "answer": 0,
+            "hint": { "fi": "Silloin käytetään punaista unikkoa.", "en": "On this day we wear a red poppy." },
+            "explain": { "fi": "Muistopäivä on 11. marraskuuta. Silloin muistetaan sotilaita ja käytetään unikkoa.", "en": "Remembrance Day is on November 11. We remember soldiers and wear a poppy." } },
+          { "q": { "fi": "Mikä kuukausi nyt on englanniksi?", "en": "What month is it now?" },
+            "choices": ["November", "July", "March"], "answer": 0,
+            "hint": { "fi": "Marraskuu on englanniksi November.", "en": "It is the month with Remembrance Day." },
+            "explain": { "fi": "Marraskuu on englanniksi November.", "en": "It is November." } },
+          { "q": { "fi": "Kuukauden ensimmäinen päivä. Mikä numero se on?", "en": "The first day of the month. Which number is it?" },
+            "choices": [{ "e": "☝️", "label": "1" }, { "e": "🙌", "label": "10" }, { "e": "🗓️", "label": "7" }], "answer": 0,
+            "hint": { "fi": "Ensimmäinen on numero yksi.", "en": "First means number one." },
+            "explain": { "fi": "Ensimmäinen päivä on 1. Kirjoitetaan: November 1.", "en": "The first day is 1. We write: November 1." } }
+        ] },
+        { "type": "sequence", "mode": "next", "set": "days", "skill": "days:next", "count": 3 },
+        { "type": "trace", "skill": "trace:num", "chars": ["N", "1"], "mode": "both" }
+      ],
+      "lili": [
+        { "type": "pick", "mode": "custom", "skill": "cal:nov", "count": 1, "shuffle": false, "items": [
+          { "q": { "fi": "Missä juhlassa käytetään punaista unikkoa?", "en": "On which special day do we wear a red poppy?" },
+            "choices": ["Remembrance Day", "Christmas", "Halloween"], "answer": 0,
+            "hint": { "fi": "Etsi punainen kukka.", "en": "Look for the red flower." },
+            "explain": { "fi": "Muistopäivänä käytetään unikkoa.", "en": "We wear a poppy on Remembrance Day." } }
+        ] },
+        { "type": "count", "skill": "count5", "min": 1, "max": 3, "count": 3, "emoji": "🍂", "what": { "fi": "lehteä", "en": "leaves" } },
+        { "type": "trace", "skill": "trace:num", "chars": ["1"] }
+      ],
+      "offline": [{ "id": "d1-date", "fi": "Kirjoita päivämäärä paperille: November 1, 2026", "en": "Print today's date on paper: November 1, 2026" }]
+    },
+    {
+      "day": 2,
+      "sheet": "Print a sentence about an animal. Someone may help you spell the words.",
+      "title": { "fi": "Lause eläimestä", "en": "A sentence about an animal" },
+      "liliTitle": { "fi": "Eläinten nimet englanniksi", "en": "Animal words" },
+      "leo": [
+        { "type": "sentence", "skill": "sentence:animal", "count": 3, "sentences": [
+          { "en": "I see a dog.", "fi": "Näen koiran.", "e": "🐶" },
+          { "en": "The cat is big.", "fi": "Kissa on iso.", "e": "🐱" },
+          { "en": "A duck can swim.", "fi": "Ankka osaa uida.", "e": "🦆" },
+          { "en": "I like my fish.", "fi": "Pidän kalastani.", "e": "🐟" }
+        ] },
+        { "type": "pick", "mode": "word", "skill": "word:animals", "words": ["dog", "cat", "fish", "duck", "pig", "horse", "lion", "frog"], "count": 4, "choices": 4 },
+        { "type": "say", "skill": "say", "items": [
+          { "fi": "Kerro englanniksi lause lempieläimestäsi. Esimerkiksi:", "en": "Say a sentence about your favourite animal. For example:", "say": "I like cats.", "model": "I like cats. I see a dog." }
+        ] }
+      ],
+      "lili": [
+        { "type": "pick", "mode": "word", "skill": "word:animals", "words": ["dog", "cat", "fish", "duck", "pig", "horse"], "count": 4, "choices": 2 },
+        { "type": "say", "skill": "say", "items": [
+          { "fi": "Sano englanniksi:", "en": "Say:", "say": "dog", "model": "dog" },
+          { "fi": "Sano englanniksi:", "en": "Say:", "say": "cat", "model": "cat" }
+        ] }
+      ],
+      "offline": [{ "id": "d2-sent", "fi": "Kirjoita lause eläimestä paperille (aikuinen auttaa)", "en": "Print a sentence about an animal on paper (with help)" }]
+    },
+    {
+      "day": 3,
+      "sheet": "Make a list of words that rhyme with 'back'.",
+      "title": { "fi": "Sanat, jotka rimmaavat: back", "en": "Words that rhyme with 'back'" },
+      "leo": [
+        { "type": "pick", "mode": "rhyme", "skill": "rhyme:ack", "base": "back", "rime": "ack", "words": ["snack", "track", "pack", "black", "sack", "stack"], "count": 5, "choices": 3 },
+        { "type": "rhymebuild", "skill": "build:ack", "rime": "ack", "onsets": ["b", "s", "p", "r", "t", "j", "bl", "sn", "tr", "st"], "count": 5, "choices": 3 },
+        { "type": "say", "skill": "say", "items": [
+          { "fi": "Sano kolme sanaa, jotka rimmaavat tämän kanssa:", "en": "Say three words that rhyme with", "say": "back", "model": "sack, pack, snack" }
+        ] }
+      ],
+      "lili": [
+        { "type": "pick", "mode": "rhyme", "skill": "rhyme:ack", "base": "back", "rime": "ack", "words": ["snack", "pack", "black", "sack"], "count": 4, "choices": 2 },
+        { "type": "say", "skill": "say", "items": [
+          { "fi": "Sano perässä:", "en": "Say after me:", "say": "back, sack, pack", "model": "back, sack, pack" }
+        ] }
+      ],
+      "offline": [{ "id": "d3-list", "fi": "Kirjoita lista sanoista, jotka rimmaavat: back", "en": "Make a list of words that rhyme with 'back'" }]
+    },
+    {
+      "day": 4,
+      "sheet": "Have someone help you make a list of things that begin with 'd'. Print the letter 'd'.",
+      "title": { "fi": "Asiat, jotka alkavat d-äänteellä", "en": "Things that begin with 'd'" },
+      "leo": [
+        { "type": "pick", "mode": "start", "skill": "start:d", "letter": "d", "example": "dog", "words": ["dog", "duck", "drum", "door", "dinosaur", "dolphin", "donut", "dice", "deer"], "count": 6, "choices": 4 },
+        { "type": "tapall", "skill": "find:d", "letter": "d", "prompt": { "fi": "Napauta kaikkia, jotka alkavat äänteellä", "en": "Tap all the things that start with" }, "say": "d, as in dog", "words": ["dog", "duck", "drum", "door", "dinosaur", "dolphin", "donut", "dice", "deer"], "count": 2 },
+        { "type": "trace", "skill": "trace:d", "chars": ["d", "D"], "mode": "both" }
+      ],
+      "lili": [
+        { "type": "pick", "mode": "start", "skill": "start:d", "letter": "d", "example": "dog", "words": ["dog", "duck", "drum", "door", "dinosaur", "dolphin"], "count": 4, "choices": 2 },
+        { "type": "trace", "skill": "trace:d", "chars": ["d", "d"] }
+      ],
+      "offline": [
+        { "id": "d4-list", "fi": "Tee lista d-alkuisista asioista (aikuinen auttaa)", "en": "Make a list of things that begin with 'd' (with help)" },
+        { "id": "d4-print", "fi": "Kirjoita d-kirjain paperille", "en": "Print the letter 'd' on paper" }
+      ]
+    },
+    {
+      "day": 5,
+      "sheet": "Have someone ask you 10 subtraction questions.",
+      "title": { "fi": "10 vähennyslaskua", "en": "10 subtraction questions" },
+      "liliTitle": { "fi": "Montako jää jäljelle?", "en": "How many are left?" },
+      "leo": [{ "type": "math", "skill": "sub10", "op": "sub", "max": 10, "count": 10 }],
+      "lili": [{ "type": "count", "skill": "take5", "mode": "take", "min": 2, "max": 5, "count": 4, "emoji": "🐦", "what": { "fi": "lintua", "en": "birds" } }]
+    },
+    {
+      "day": 6,
+      "sheet": "Have someone help you make a list of things that begin with 'r'. Print the letter 'r'.",
+      "title": { "fi": "Asiat, jotka alkavat r-äänteellä", "en": "Things that begin with 'r'" },
+      "leo": [
+        { "type": "pick", "mode": "start", "skill": "start:r", "letter": "r", "example": "rabbit", "words": ["rabbit", "rainbow", "robot", "rocket", "ring", "rose", "rain", "rooster"], "count": 6, "choices": 4 },
+        { "type": "tapall", "skill": "find:r", "letter": "r", "prompt": { "fi": "Napauta kaikkia, jotka alkavat äänteellä", "en": "Tap all the things that start with" }, "say": "r, as in rabbit", "words": ["rabbit", "rainbow", "robot", "rocket", "ring", "rose", "rain", "rooster"], "count": 2 },
+        { "type": "trace", "skill": "trace:r", "chars": ["r", "R"], "mode": "both" }
+      ],
+      "lili": [
+        { "type": "pick", "mode": "start", "skill": "start:r", "letter": "r", "example": "rabbit", "words": ["rabbit", "rainbow", "robot", "rocket", "rose"], "count": 4, "choices": 2 },
+        { "type": "trace", "skill": "trace:r", "chars": ["r", "r"] }
+      ],
+      "offline": [
+        { "id": "d6-list", "fi": "Tee lista r-alkuisista asioista (aikuinen auttaa)", "en": "Make a list of things that begin with 'r' (with help)" },
+        { "id": "d6-print", "fi": "Kirjoita r-kirjain paperille", "en": "Print the letter 'r' on paper" }
+      ]
+    },
+    {
+      "day": 7,
+      "sheet": "Play a board game with someone in your family.",
+      "title": { "fi": "Lautapeli perheen kanssa + kertausta", "en": "Board game with the family + review" },
+      "leo": [], "lili": [],
+      "review": { "leo": 4, "lili": 2 },
+      "offline": [{ "id": "d7-game", "fi": "Pelatkaa lautapeliä perheen kanssa 🎲", "en": "Play a board game with someone in your family 🎲" }],
+      "liliOffline": [{ "id": "d7-game", "fi": "Pelatkaa lautapeliä perheen kanssa 🎲", "en": "Play a board game with someone in your family 🎲" }]
+    },
+    {
+      "day": 8,
+      "sheet": "Draw a picture of your house. Print a sentence about it. Someone can help you.",
+      "title": { "fi": "Oma talo: kuva ja lause", "en": "Your house: a picture and a sentence" },
+      "liliTitle": { "fi": "Talon sanat englanniksi", "en": "House words" },
+      "leo": [
+        { "type": "sentence", "skill": "sentence:house", "count": 3, "sentences": [
+          { "en": "My house is big.", "fi": "Taloni on iso.", "e": "🏠" },
+          { "en": "I see a red door.", "fi": "Näen punaisen oven.", "e": "🚪" },
+          { "en": "My house has a window.", "fi": "Talossani on ikkuna.", "e": "🪟" },
+          { "en": "I live in a house.", "fi": "Asun talossa.", "e": "🏡" }
+        ] },
+        { "type": "pick", "mode": "word", "skill": "word:home", "words": ["house", "door", "window", "tree", "car", "cat"], "count": 4, "choices": 4 }
+      ],
+      "lili": [
+        { "type": "pick", "mode": "word", "skill": "word:home", "words": ["house", "door", "window", "tree"], "count": 4, "choices": 2 },
+        { "type": "say", "skill": "say", "items": [{ "fi": "Sano englanniksi:", "en": "Say:", "say": "house", "model": "house" }] }
+      ],
+      "offline": [
+        { "id": "d8-draw", "fi": "Piirrä kuva talostasi 🖍️", "en": "Draw a picture of your house 🖍️" },
+        { "id": "d8-sent", "fi": "Kirjoita lause talostasi (aikuinen auttaa)", "en": "Print a sentence about your house (with help)" }
+      ],
+      "liliOffline": [{ "id": "d8-draw", "fi": "Piirrä kuva talostasi 🖍️", "en": "Draw a picture of your house 🖍️" }]
+    },
+    {
+      "day": 9,
+      "sheet": "Cut out a poppy and colour it.",
+      "title": { "fi": "Unikko: leikkaa ja väritä + kertausta", "en": "Poppy: cut out and colour + review" },
+      "leo": [], "lili": [],
+      "review": { "leo": 4, "lili": 2 },
+      "offline": [{ "id": "d9-poppy", "fi": "Leikkaa unikko ja väritä se 🌺", "en": "Cut out a poppy and colour it 🌺" }],
+      "liliOffline": [{ "id": "d9-poppy", "fi": "Väritä unikko 🌺", "en": "Colour a poppy 🌺" }]
+    },
+    {
+      "day": 10,
+      "sheet": "Have someone ask you 10 subtraction questions.",
+      "title": { "fi": "10 vähennyslaskua", "en": "10 subtraction questions" },
+      "liliTitle": { "fi": "Montako jää jäljelle?", "en": "How many are left?" },
+      "leo": [{ "type": "math", "skill": "sub10", "op": "sub", "max": 10, "count": 10 }],
+      "lili": [{ "type": "count", "skill": "take5", "mode": "take", "min": 2, "max": 5, "count": 4, "emoji": "🐟", "what": { "fi": "kalaa", "en": "fish" } }]
+    },
+    {
+      "day": 11,
+      "sheet": "Remembrance Day. Have someone tell you why we have this special day.",
+      "title": { "fi": "Muistopäivä", "en": "Remembrance Day" },
+      "leo": [
+        { "type": "pick", "mode": "custom", "skill": "remembrance", "count": 2, "shuffle": false, "choices": 3, "items": [
+          { "q": { "fi": "Milloin muistopäivä on?", "en": "When is Remembrance Day?" },
+            "choices": [{ "e": "🌺", "label": "November 11" }, { "e": "🎄", "label": "December 25" }, { "e": "🎃", "label": "October 31" }], "answer": 0,
+            "hint": { "fi": "Se on marraskuussa, eli November.", "en": "It is in November." },
+            "explain": { "fi": "Muistopäivä on 11. marraskuuta, November 11.", "en": "Remembrance Day is on November 11." } },
+          { "q": { "fi": "Mitä muistopäivänä käytetään?", "en": "What do we wear on Remembrance Day?" },
+            "choices": ["poppy", "hat", "star"], "answer": 0,
+            "hint": { "fi": "Se on punainen kukka.", "en": "It is a red flower." },
+            "explain": { "fi": "Unikko, englanniksi poppy.", "en": "A poppy." } }
+        ] },
+        { "type": "count", "skill": "poppies", "min": 8, "max": 12, "count": 2, "emoji": "🌺", "what": { "fi": "unikkoa", "en": "poppies" }, "lang": "en", "choices": 4 }
+      ],
+      "lili": [{ "type": "count", "skill": "poppies", "min": 1, "max": 5, "count": 3, "emoji": "🌺", "what": { "fi": "unikkoa", "en": "poppies" } }],
+      "offline": [{ "id": "d11-talk", "fi": "Joku kertoo, miksi muistopäivää vietetään", "en": "Someone tells you why we have Remembrance Day" }],
+      "liliOffline": [{ "id": "d11-talk", "fi": "Kuuntele, kun joku kertoo muistopäivästä", "en": "Listen to someone tell you about Remembrance Day" }]
+    },
+    {
+      "day": 12,
+      "sheet": "Have someone help you make a list of things that begin with 'v'. Print the letter 'v'.",
+      "title": { "fi": "Asiat, jotka alkavat v-äänteellä", "en": "Things that begin with 'v'" },
+      "leo": [
+        { "type": "pick", "mode": "start", "skill": "start:v", "letter": "v", "example": "van", "words": ["van", "violin", "volcano", "vase", "vest", "volleyball", "vegetables"], "count": 6, "choices": 4 },
+        { "type": "tapall", "skill": "find:v", "letter": "v", "prompt": { "fi": "Napauta kaikkia, jotka alkavat äänteellä", "en": "Tap all the things that start with" }, "say": "v, as in van", "words": ["van", "violin", "volcano", "vase", "vest", "volleyball"], "count": 2 },
+        { "type": "trace", "skill": "trace:v", "chars": ["v", "V"], "mode": "both" }
+      ],
+      "lili": [
+        { "type": "pick", "mode": "start", "skill": "start:v", "letter": "v", "example": "van", "words": ["van", "violin", "volcano", "vase"], "count": 4, "choices": 2 },
+        { "type": "trace", "skill": "trace:v", "chars": ["v", "v"] }
+      ],
+      "offline": [
+        { "id": "d12-list", "fi": "Tee lista v-alkuisista asioista (aikuinen auttaa)", "en": "Make a list of things that begin with 'v' (with help)" },
+        { "id": "d12-print", "fi": "Kirjoita v-kirjain paperille", "en": "Print the letter 'v' on paper" }
+      ]
+    },
+    {
+      "day": 13,
+      "sheet": "Print a sentence about school. Someone may help you spell the words.",
+      "title": { "fi": "Lause koulusta", "en": "A sentence about school" },
+      "liliTitle": { "fi": "Koulun sanat englanniksi", "en": "School words" },
+      "leo": [
+        { "type": "sentence", "skill": "sentence:school", "count": 3, "sentences": [
+          { "en": "I like my school.", "fi": "Pidän koulustani.", "e": "🏫" },
+          { "en": "I can read a book.", "fi": "Osaan lukea kirjaa.", "e": "📕" },
+          { "en": "My teacher is nice.", "fi": "Opettajani on mukava.", "e": "🧑‍🏫" },
+          { "en": "I go to school.", "fi": "Menen kouluun.", "e": "🎒" }
+        ] },
+        { "type": "pick", "mode": "word", "skill": "word:school", "words": ["book", "pencil", "teacher", "school", "bus", "pack"], "count": 4, "choices": 4 }
+      ],
+      "lili": [
+        { "type": "pick", "mode": "word", "skill": "word:school", "words": ["book", "pencil", "bus", "school"], "count": 4, "choices": 2 },
+        { "type": "say", "skill": "say", "items": [{ "fi": "Sano englanniksi:", "en": "Say:", "say": "book", "model": "book" }] }
+      ],
+      "offline": [{ "id": "d13-sent", "fi": "Kirjoita lause koulusta paperille (aikuinen auttaa)", "en": "Print a sentence about school (with help)" }]
+    },
+    {
+      "day": 14,
+      "sheet": "Make a list of words that rhyme with 'Bill'.",
+      "title": { "fi": "Sanat, jotka rimmaavat: Bill", "en": "Words that rhyme with 'Bill'" },
+      "leo": [
+        { "type": "pick", "mode": "rhyme", "skill": "rhyme:ill", "base": "Bill", "rime": "ill", "words": ["hill", "pill", "chill", "spill", "drill", "grill"], "count": 5, "choices": 3 },
+        { "type": "rhymebuild", "skill": "build:ill", "rime": "ill", "onsets": ["b", "h", "p", "f", "m", "w", "dr", "gr", "sp", "st", "ch"], "count": 5, "choices": 3 },
+        { "type": "say", "skill": "say", "items": [
+          { "fi": "Sano kolme sanaa, jotka rimmaavat tämän kanssa:", "en": "Say three words that rhyme with", "say": "Bill", "model": "hill, pill, fill" }
+        ] }
+      ],
+      "lili": [
+        { "type": "pick", "mode": "rhyme", "skill": "rhyme:ill", "base": "Bill", "rime": "ill", "words": ["hill", "pill", "grill", "drill"], "count": 4, "choices": 2 },
+        { "type": "say", "skill": "say", "items": [{ "fi": "Sano perässä:", "en": "Say after me:", "say": "Bill, hill, pill", "model": "Bill, hill, pill" }] }
+      ],
+      "offline": [{ "id": "d14-list", "fi": "Kirjoita lista sanoista, jotka rimmaavat: Bill", "en": "Make a list of words that rhyme with 'Bill'" }]
+    },
+    {
+      "day": 15,
+      "sheet": "How many things can you find that are rectangles?",
+      "title": { "fi": "Suorakulmiot", "en": "Rectangles" },
+      "leo": [
+        { "type": "shapes", "skill": "shape:rect", "count": 3 },
+        { "type": "tapall", "skill": "rect:things", "prompt": { "fi": "Napauta kaikkia, jotka ovat suorakulmion muotoisia:", "en": "Tap all the things shaped like a rectangle:" }, "say": "rectangle", "words": ["door", "phone", "tv", "book", "envelope", "window"], "distractors": ["ball", "pizza", "donut", "moon", "orange", "star", "sun"], "count": 2 },
+        { "type": "say", "skill": "say", "items": [{ "fi": "Etsi kotoa kolme suorakulmiota ja näytä ne aikuiselle.", "en": "Find three rectangles at home and show a grown-up." }] }
+      ],
+      "lili": [
+        { "type": "shapes", "skill": "shape:rect", "count": 3 },
+        { "type": "tapall", "skill": "rect:things", "prompt": { "fi": "Napauta suorakulmion muotoisia:", "en": "Tap the things shaped like a rectangle:" }, "words": ["door", "phone", "tv", "book"], "distractors": ["ball", "pizza", "donut", "moon"], "count": 2 }
+      ],
+      "offline": [{ "id": "d15-count", "fi": "Montako suorakulmiota löydät kotoa? Laskekaa yhdessä.", "en": "How many rectangles can you find at home? Count them together." }]
+    },
+    {
+      "day": 16,
+      "sheet": "Have someone ask you 10 addition questions.",
+      "title": { "fi": "10 yhteenlaskua", "en": "10 addition questions" },
+      "liliTitle": { "fi": "Montako yhteensä?", "en": "How many altogether?" },
+      "leo": [{ "type": "math", "skill": "add10", "op": "add", "max": 10, "count": 10 }],
+      "lili": [{ "type": "count", "skill": "add5", "mode": "add", "max": 5, "count": 4, "emoji": "🍎", "what": { "fi": "omenaa", "en": "apples" } }]
+    },
+    {
+      "day": 17,
+      "sheet": "Have someone help you make a list of things that begin with 'w'. Print the letter 'w'.",
+      "title": { "fi": "Asiat, jotka alkavat w-äänteellä", "en": "Things that begin with 'w'" },
+      "leo": [
+        { "type": "pick", "mode": "start", "skill": "start:w", "letter": "w", "example": "web", "words": ["whale", "watch", "window", "worm", "web", "watermelon", "wolf", "wave"], "count": 6, "choices": 4 },
+        { "type": "tapall", "skill": "find:w", "letter": "w", "prompt": { "fi": "Napauta kaikkia, jotka alkavat äänteellä", "en": "Tap all the things that start with" }, "say": "w, as in web", "words": ["whale", "watch", "window", "worm", "web", "watermelon", "wolf", "wave"], "count": 2 },
+        { "type": "trace", "skill": "trace:w", "chars": ["w", "W"], "mode": "both" }
+      ],
+      "lili": [
+        { "type": "pick", "mode": "start", "skill": "start:w", "letter": "w", "example": "web", "words": ["whale", "watch", "worm", "watermelon", "wolf"], "count": 4, "choices": 2 },
+        { "type": "trace", "skill": "trace:w", "chars": ["w", "w"] }
+      ],
+      "offline": [
+        { "id": "d17-list", "fi": "Tee lista w-alkuisista asioista (aikuinen auttaa)", "en": "Make a list of things that begin with 'w' (with help)" },
+        { "id": "d17-print", "fi": "Kirjoita w-kirjain paperille", "en": "Print the letter 'w' on paper" }
+      ]
+    },
+    {
+      "day": 18,
+      "sheet": "Tell someone the days of the week and the months of the year.",
+      "title": { "fi": "Viikonpäivät ja kuukaudet", "en": "Days of the week and months of the year" },
+      "liliTitle": { "fi": "Viikonpäivät englanniksi", "en": "Days of the week" },
+      "leo": [
+        { "type": "song", "song": "days", "mode": "sing", "skill": "song:days" },
+        { "type": "song", "song": "days", "mode": "order", "skill": "song:days-order" },
+        { "type": "song", "song": "months", "mode": "gap", "skill": "song:months", "gaps": 2 },
+        { "type": "sequence", "mode": "next", "set": "months", "skill": "months:next", "count": 3 },
+        { "type": "say", "skill": "say", "items": [
+          { "fi": "Sano viikonpäivät englanniksi.", "en": "Say the days of the week.", "model": "Sunday, Monday, Tuesday, Wednesday, Thursday, Friday, Saturday" },
+          { "fi": "Sano kuukaudet englanniksi.", "en": "Say the months of the year.", "model": "January, February, March, April, May, June, July, August, September, October, November, December" }
+        ] }
+      ],
+      "lili": [
+        { "type": "song", "song": "days", "mode": "sing", "skill": "song:days" },
+        { "type": "song", "song": "days", "mode": "gap", "skill": "song:days", "gaps": 1, "limit": 4 },
+        { "type": "sequence", "mode": "next", "set": "days", "skill": "days:next", "count": 2, "choices": 2 }
+      ]
+    },
+    {
+      "day": 19,
+      "sheet": "Make a list of words that rhyme with 'hot'.",
+      "title": { "fi": "Sanat, jotka rimmaavat: hot", "en": "Words that rhyme with 'hot'" },
+      "leo": [
+        { "type": "pick", "mode": "rhyme", "skill": "rhyme:ot", "base": "hot", "rime": "ot", "words": ["pot", "dot", "knot", "spot", "cot", "robot"], "count": 5, "choices": 3 },
+        { "type": "rhymebuild", "skill": "build:ot", "rime": "ot", "onsets": ["h", "p", "d", "c", "g", "l", "n", "r", "sh", "sp"], "count": 5, "choices": 3 },
+        { "type": "say", "skill": "say", "items": [
+          { "fi": "Sano kolme sanaa, jotka rimmaavat tämän kanssa:", "en": "Say three words that rhyme with", "say": "hot", "model": "pot, dot, not" }
+        ] }
+      ],
+      "lili": [
+        { "type": "pick", "mode": "rhyme", "skill": "rhyme:ot", "base": "hot", "rime": "ot", "words": ["pot", "dot", "knot", "robot"], "count": 4, "choices": 2 },
+        { "type": "say", "skill": "say", "items": [{ "fi": "Sano perässä:", "en": "Say after me:", "say": "hot, pot, dot", "model": "hot, pot, dot" }] }
+      ],
+      "offline": [{ "id": "d19-list", "fi": "Kirjoita lista sanoista, jotka rimmaavat: hot", "en": "Make a list of words that rhyme with 'hot'" }]
+    },
+    {
+      "day": 20,
+      "sheet": "Make a list of words that begin with 'o' as in 'octopus'. Print the letter 'o'.",
+      "title": { "fi": "Sanat, jotka alkavat o-äänteellä (octopus)", "en": "Words that begin with 'o' as in 'octopus'" },
+      "leo": [
+        { "type": "pick", "mode": "start", "skill": "start:o", "letter": "o", "example": "octopus", "words": ["octopus", "otter", "ox", "olive"], "count": 6, "choices": 4 },
+        { "type": "tapall", "skill": "find:o", "letter": "o", "prompt": { "fi": "Napauta kaikkia, jotka alkavat äänteellä", "en": "Tap all the things that start with" }, "say": "o, as in octopus", "words": ["octopus", "otter", "ox", "olive"], "count": 2 },
+        { "type": "trace", "skill": "trace:o", "chars": ["o", "O"], "mode": "both" }
+      ],
+      "lili": [
+        { "type": "pick", "mode": "start", "skill": "start:o", "letter": "o", "example": "octopus", "words": ["octopus", "otter", "ox", "olive"], "count": 4, "choices": 2 },
+        { "type": "trace", "skill": "trace:o", "chars": ["o", "o"] }
+      ],
+      "offline": [
+        { "id": "d20-list", "fi": "Tee lista o-alkuisista sanoista (aikuinen auttaa)", "en": "Make a list of words that begin with 'o' (with help)" },
+        { "id": "d20-print", "fi": "Kirjoita o-kirjain paperille", "en": "Print the letter 'o' on paper" }
+      ]
+    },
+    {
+      "day": 21,
+      "sheet": "Have someone ask you 10 subtraction questions.",
+      "title": { "fi": "10 vähennyslaskua", "en": "10 subtraction questions" },
+      "liliTitle": { "fi": "Montako jää jäljelle?", "en": "How many are left?" },
+      "leo": [{ "type": "math", "skill": "sub10", "op": "sub", "max": 10, "count": 10 }],
+      "lili": [{ "type": "count", "skill": "take5", "mode": "take", "min": 2, "max": 5, "count": 4, "emoji": "🎈", "what": { "fi": "ilmapalloa", "en": "balloons" } }]
+    },
+    {
+      "day": 22,
+      "sheet": "Print a sentence about a favourite toy. Someone may help you spell the words.",
+      "title": { "fi": "Lause lempilelusta", "en": "A sentence about a favourite toy" },
+      "liliTitle": { "fi": "Lelujen nimet englanniksi", "en": "Toy words" },
+      "leo": [
+        { "type": "sentence", "skill": "sentence:toy", "count": 3, "sentences": [
+          { "en": "My toy is a car.", "fi": "Leluni on auto.", "e": "🚗" },
+          { "en": "I like my robot.", "fi": "Pidän robotistani.", "e": "🤖" },
+          { "en": "I play with a ball.", "fi": "Leikin pallolla.", "e": "⚽" },
+          { "en": "My teddy is soft.", "fi": "Nalleni on pehmeä.", "e": "🧸" }
+        ] },
+        { "type": "pick", "mode": "word", "skill": "word:toys", "words": ["ball", "car", "robot", "kite", "teddy", "blocks"], "count": 4, "choices": 4 },
+        { "type": "say", "skill": "say", "items": [{ "fi": "Kerro englanniksi lempilelustasi. Esimerkiksi:", "en": "Tell about your favourite toy. For example:", "say": "My toy is a car.", "model": "My toy is a car. I like my robot." }] }
+      ],
+      "lili": [
+        { "type": "pick", "mode": "word", "skill": "word:toys", "words": ["ball", "car", "teddy", "kite"], "count": 4, "choices": 2 },
+        { "type": "say", "skill": "say", "items": [{ "fi": "Sano englanniksi:", "en": "Say:", "say": "teddy", "model": "teddy" }] }
+      ],
+      "offline": [{ "id": "d22-sent", "fi": "Kirjoita lause lempilelusta paperille (aikuinen auttaa)", "en": "Print a sentence about a favourite toy (with help)" }]
+    },
+    {
+      "day": 23,
+      "sheet": "Count to 100. Print the numbers to 20.",
+      "title": { "fi": "Laske sataan, kirjoita numerot 20:een", "en": "Count to 100, print the numbers to 20" },
+      "liliTitle": { "fi": "Laske kymmeneen", "en": "Count to 10" },
+      "leo": [
+        { "type": "song", "song": "count20", "mode": "gap", "skill": "song:count20", "gaps": 2 },
+        { "type": "song", "song": "by10", "mode": "sing", "skill": "song:by10" },
+        { "type": "hundred", "skill": "hundred", "max": 100, "count": 5 },
+        { "type": "trace", "skill": "trace:num", "chars": ["12", "15", "20"], "mode": "trace" },
+        { "type": "say", "skill": "say", "items": [{ "fi": "Laske sataan englanniksi aikuisen kanssa.", "en": "Count to 100 with a grown-up.", "model": "one, two, three, four, five, six, seven, eight, nine, ten" }] }
+      ],
+      "lili": [
+        { "type": "song", "song": "count10", "mode": "sing", "skill": "song:count10" },
+        { "type": "hundred", "skill": "count10", "max": 10, "count": 3 },
+        { "type": "trace", "skill": "trace:num", "chars": ["5"] }
+      ],
+      "offline": [{ "id": "d23-print", "fi": "Kirjoita numerot 1–20 paperille", "en": "Print the numbers to 20 on paper" }]
+    },
+    {
+      "day": 24,
+      "sheet": "Have someone ask you 10 addition questions.",
+      "title": { "fi": "10 yhteenlaskua", "en": "10 addition questions" },
+      "liliTitle": { "fi": "Montako yhteensä?", "en": "How many altogether?" },
+      "leo": [{ "type": "math", "skill": "add10", "op": "add", "max": 10, "count": 10 }],
+      "lili": [{ "type": "count", "skill": "add5", "mode": "add", "max": 5, "count": 4, "emoji": "🍓", "what": { "fi": "mansikkaa", "en": "strawberries" } }]
+    },
+    {
+      "day": 25,
+      "sheet": "Make a list of words that begin with 'y' as in 'yes'. Print the letter 'y'.",
+      "title": { "fi": "Sanat, jotka alkavat y-äänteellä (yes)", "en": "Words that begin with 'y' as in 'yes'" },
+      "leo": [
+        { "type": "pick", "mode": "start", "skill": "start:y", "letter": "y", "example": "yes", "words": ["yo-yo", "yarn", "yawn", "yacht", "yes", "yellow"], "count": 6, "choices": 4 },
+        { "type": "tapall", "skill": "find:y", "letter": "y", "prompt": { "fi": "Napauta kaikkia, jotka alkavat äänteellä", "en": "Tap all the things that start with" }, "say": "y, as in yes", "words": ["yo-yo", "yarn", "yawn", "yacht", "yes", "yellow"], "count": 2 },
+        { "type": "trace", "skill": "trace:y", "chars": ["y", "Y"], "mode": "both" }
+      ],
+      "lili": [
+        { "type": "pick", "mode": "start", "skill": "start:y", "letter": "y", "example": "yes", "words": ["yo-yo", "yarn", "yacht", "yes"], "count": 4, "choices": 2 },
+        { "type": "trace", "skill": "trace:y", "chars": ["y", "y"] }
+      ],
+      "offline": [
+        { "id": "d25-list", "fi": "Tee lista y-alkuisista sanoista (aikuinen auttaa)", "en": "Make a list of words that begin with 'y' (with help)" },
+        { "id": "d25-print", "fi": "Kirjoita y-kirjain paperille", "en": "Print the letter 'y' on paper" }
+      ]
+    },
+    {
+      "day": 26,
+      "sheet": "Have someone ask you 10 addition and 10 subtraction questions.",
+      "title": { "fi": "10 yhteenlaskua ja 10 vähennyslaskua", "en": "10 addition and 10 subtraction questions" },
+      "liliTitle": { "fi": "Yhteensä ja jäljelle", "en": "Altogether and left over" },
+      "leo": [
+        { "type": "math", "skill": "add10", "op": "add", "max": 10, "count": 10 },
+        { "type": "math", "skill": "sub10", "op": "sub", "max": 10, "count": 10 }
+      ],
+      "lili": [
+        { "type": "count", "skill": "add5", "mode": "add", "max": 5, "count": 3, "emoji": "🍎", "what": { "fi": "omenaa", "en": "apples" } },
+        { "type": "count", "skill": "take5", "mode": "take", "min": 2, "max": 5, "count": 3, "emoji": "🐦", "what": { "fi": "lintua", "en": "birds" } }
+      ],
+      "review": { "leo": 1, "lili": 1 }
+    },
+    {
+      "day": 27,
+      "sheet": "Print a riddle! Someone may help you spell the words.",
+      "title": { "fi": "Arvoitukset", "en": "Riddles" },
+      "leo": [
+        { "type": "pick", "mode": "custom", "skill": "riddle", "count": 4, "items": [
+          { "q": { "fi": "Arvoitus! Kuuntele:", "en": "Riddle! Listen:" }, "say": "I am yellow. Monkeys like to eat me. What am I?", "choices": ["banana", "apple", "carrot", "fish"], "answer": 0,
+            "hint": { "fi": "Olen keltainen, ja apinat syövät minua.", "en": "I am a yellow fruit." }, "explain": { "fi": "Banaani! Se on keltainen, ja apinat tykkäävät siitä.", "en": "A banana! It is yellow and monkeys love it." } },
+          { "q": { "fi": "Arvoitus! Kuuntele:", "en": "Riddle! Listen:" }, "say": "I have four legs. I say woof. What am I?", "choices": ["dog", "cat", "duck", "fish"], "answer": 0,
+            "hint": { "fi": "Minulla on neljä jalkaa, ja sanon hau hau.", "en": "I say woof woof." }, "explain": { "fi": "Koira! Koira sanoo hau.", "en": "A dog! A dog says woof." } },
+          { "q": { "fi": "Arvoitus! Kuuntele:", "en": "Riddle! Listen:" }, "say": "I am hot. I am in the sky in the day. What am I?", "choices": ["sun", "moon", "star", "tree"], "answer": 0,
+            "hint": { "fi": "Olen kuuma ja näyn taivaalla päivällä.", "en": "You see me in the day, not at night." }, "explain": { "fi": "Aurinko!", "en": "The sun!" } },
+          { "q": { "fi": "Arvoitus! Kuuntele:", "en": "Riddle! Listen:" }, "say": "I am cold and sweet. You lick me. What am I?", "choices": ["ice cream", "cake", "apple", "milk"], "answer": 0,
+            "hint": { "fi": "Olen kylmä ja makea, ja minua nuollaan.", "en": "I am cold. You eat me in summer." }, "explain": { "fi": "Jäätelö!", "en": "Ice cream!" } },
+          { "q": { "fi": "Arvoitus! Kuuntele:", "en": "Riddle! Listen:" }, "say": "I am big and grey. I have a long trunk. What am I?", "choices": ["elephant", "mouse", "lion", "frog"], "answer": 0,
+            "hint": { "fi": "Olen iso ja harmaa, ja minulla on pitkä kärsä.", "en": "I am very big and grey." }, "explain": { "fi": "Norsu!", "en": "An elephant!" } },
+          { "q": { "fi": "Arvoitus! Kuuntele:", "en": "Riddle! Listen:" }, "say": "I am orange. Rabbits like to eat me. What am I?", "choices": ["carrot", "banana", "broccoli", "egg"], "answer": 0,
+            "hint": { "fi": "Olen oranssi, ja kanit syövät minua.", "en": "I am an orange vegetable." }, "explain": { "fi": "Porkkana!", "en": "A carrot!" } }
+        ] },
+        { "type": "sentence", "skill": "sentence:riddle", "count": 2, "sentences": [
+          { "en": "I am yellow.", "fi": "Olen keltainen.", "e": "🍌" },
+          { "en": "I can say woof.", "fi": "Osaan sanoa hau.", "e": "🐶" },
+          { "en": "What am I?", "fi": "Mikä minä olen?", "e": "❓" }
+        ] }
+      ],
+      "lili": [
+        { "type": "pick", "mode": "custom", "skill": "riddle", "count": 3, "items": [
+          { "q": { "fi": "Arvoitus: Olen keltainen, ja apinat syövät minua. Mikä olen?", "en": "Riddle: I am yellow and monkeys eat me. What am I?" }, "choices": ["banana", "apple", "fish"], "answer": 0,
+            "hint": { "fi": "Etsi keltainen hedelmä.", "en": "Find the yellow fruit." }, "explain": { "fi": "Banaani!", "en": "A banana!" } },
+          { "q": { "fi": "Arvoitus: Sanon hau hau. Mikä olen?", "en": "Riddle: I say woof woof. What am I?" }, "choices": ["dog", "cat", "duck"], "answer": 0,
+            "hint": { "fi": "Kuka sanoo hau?", "en": "Who says woof?" }, "explain": { "fi": "Koira!", "en": "A dog!" } },
+          { "q": { "fi": "Arvoitus: Olen kylmä ja makea. Mikä olen?", "en": "Riddle: I am cold and sweet. What am I?" }, "choices": ["ice cream", "cake", "egg"], "answer": 0,
+            "hint": { "fi": "Minua syödään kesällä.", "en": "You eat me in summer." }, "explain": { "fi": "Jäätelö!", "en": "Ice cream!" } }
+        ] }
+      ],
+      "offline": [{ "id": "d27-riddle", "fi": "Kirjoita arvoitus paperille (aikuinen auttaa)", "en": "Print a riddle on paper (someone can help)" }]
+    },
+    {
+      "day": 28,
+      "sheet": "Have someone help you make a list of words that begin with 'z'. Print the letter 'z'.",
+      "title": { "fi": "Sanat, jotka alkavat z-äänteellä", "en": "Words that begin with 'z'" },
+      "leo": [
+        { "type": "pick", "mode": "start", "skill": "start:z", "letter": "z", "example": "zebra", "words": ["zebra", "zero", "zucchini", "zipper"], "count": 6, "choices": 4 },
+        { "type": "tapall", "skill": "find:z", "letter": "z", "prompt": { "fi": "Napauta kaikkia, jotka alkavat äänteellä", "en": "Tap all the things that start with" }, "say": "z, as in zebra", "words": ["zebra", "zero", "zucchini", "zipper"], "count": 2 },
+        { "type": "trace", "skill": "trace:z", "chars": ["z", "Z"], "mode": "both" },
+        { "type": "song", "song": "sounds", "mode": "gap", "skill": "song:sounds", "gaps": 2 }
+      ],
+      "lili": [
+        { "type": "pick", "mode": "start", "skill": "start:z", "letter": "z", "example": "zebra", "words": ["zebra", "zero", "zucchini"], "count": 4, "choices": 2 },
+        { "type": "trace", "skill": "trace:z", "chars": ["z", "z"] },
+        { "type": "song", "song": "sounds", "mode": "sing", "skill": "song:sounds" }
+      ],
+      "offline": [
+        { "id": "d28-list", "fi": "Tee lista z-alkuisista sanoista (aikuinen auttaa)", "en": "Make a list of words that begin with 'z' (with help)" },
+        { "id": "d28-print", "fi": "Kirjoita z-kirjain paperille", "en": "Print the letter 'z' on paper" }
+      ]
+    },
+    {
+      "day": 29,
+      "sheet": "Make a list of red things. Someone can help you with the spelling.",
+      "title": { "fi": "Punaiset asiat", "en": "Red things" },
+      "leo": [
+        { "type": "tapall", "skill": "color:red", "prompt": { "fi": "Napauta kaikkia punaisia asioita:", "en": "Tap all the red things:" }, "say": "red", "words": ["apple", "strawberry", "fire truck", "rose", "heart", "tomato", "ladybug"], "distractors": ["banana", "frog", "tree", "broccoli", "whale", "sun", "orange", "moon"], "count": 3 },
+        { "type": "sentence", "skill": "sentence:red", "count": 2, "sentences": [
+          { "en": "The apple is red.", "fi": "Omena on punainen.", "e": "🍎" },
+          { "en": "I see a red car.", "fi": "Näen punaisen auton.", "e": "🚗" }
+        ] },
+        { "type": "say", "skill": "say", "items": [{ "fi": "Sano kolme punaista asiaa englanniksi.", "en": "Name three red things.", "model": "apple, strawberry, fire truck" }] }
+      ],
+      "lili": [
+        { "type": "tapall", "skill": "color:red", "prompt": { "fi": "Napauta punaisia asioita:", "en": "Tap the red things:" }, "say": "red", "words": ["apple", "strawberry", "fire truck", "heart", "tomato"], "distractors": ["banana", "frog", "tree", "broccoli", "whale"], "count": 3 },
+        { "type": "say", "skill": "say", "items": [{ "fi": "Sano englanniksi:", "en": "Say:", "say": "red", "model": "red" }] }
+      ],
+      "offline": [{ "id": "d29-list", "fi": "Tee lista punaisista asioista (aikuinen auttaa)", "en": "Make a list of red things (someone can help)" }]
+    },
+    {
+      "day": 30,
+      "sheet": "Return this paper to school. Count the stars!",
+      "title": { "fi": "Laske tähdet!", "en": "Count the stars!" },
+      "leo": [{ "type": "count", "skill": "count:stars", "min": 11, "max": 20, "count": 4, "emoji": "⭐", "what": { "fi": "tähteä", "en": "stars" }, "lang": "en", "choices": 4 }],
+      "lili": [{ "type": "count", "skill": "count:stars", "min": 3, "max": 8, "count": 4, "emoji": "⭐", "what": { "fi": "tähteä", "en": "stars" } }],
+      "offline": [
+        { "id": "d30-stars", "fi": "Laske tähdet kotitehtäväpaperista ⭐", "en": "Count the stars on your homework paper ⭐" },
+        { "id": "d30-return", "fi": "Palauta paperi kouluun 🏫", "en": "Return this paper to school 🏫" }
+      ]
+    }
+  ]
+}

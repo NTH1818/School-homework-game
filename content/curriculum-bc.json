@@ -1,0 +1,107 @@
+{
+  "source": "BC Curriculum (curriculum.gov.bc.ca), Kindergarten and Grade 1. See reference/curriculum/README.md",
+  "standards": [
+    { "id": "ela1-letter-sound", "grade": "1", "area": "English Language Arts", "label": "Letter-sound relationships (foundational concepts of print)" },
+    { "id": "ela1-phon", "grade": "1", "area": "English Language Arts", "label": "Phonemic and phonological awareness: rhymes, sounds, syllables" },
+    { "id": "ela1-case", "grade": "1", "area": "English Language Arts", "label": "Concepts of print: uppercase and lowercase letters" },
+    { "id": "ela1-words", "grade": "1", "area": "English Language Arts", "label": "Reading strategies: familiar and sight words" },
+    { "id": "ela1-letter-formation", "grade": "1", "area": "English Language Arts", "label": "Letter formation: legible printing" },
+    { "id": "ela1-sentence", "grade": "1", "area": "English Language Arts", "label": "Sentence structure: simple sentences" },
+    { "id": "ela1-conventions", "grade": "1", "area": "English Language Arts", "label": "Conventions: capitals, periods, question marks" },
+    { "id": "ela1-oral", "grade": "1", "area": "English Language Arts", "label": "Oral language: listening, telling, riddles" },
+    { "id": "m1-number20", "grade": "1", "area": "Mathematics", "label": "Number concepts to 20: counting, skip-counting by 2s and 5s, comparing" },
+    { "id": "m1-make10", "grade": "1", "area": "Mathematics", "label": "Ways to make 10" },
+    { "id": "m1-addsub", "grade": "1", "area": "Mathematics", "label": "Addition and subtraction to 20" },
+    { "id": "m1-patterns", "grade": "1", "area": "Mathematics", "label": "Repeating patterns (and patterns on the hundred chart)" },
+    { "id": "m1-shapes", "grade": "1", "area": "Mathematics", "label": "Comparing 2D shapes and 3D objects; sorting by one attribute" },
+    { "id": "m1-coins", "grade": "1", "area": "Mathematics", "label": "Financial literacy: values of coins" },
+    { "id": "sci1-cycles", "grade": "1", "area": "Science", "label": "Patterns and cycles: days, months, seasons" },
+    { "id": "arts1-music", "grade": "1", "area": "Arts Education", "label": "Music: beat, rhythm, pitch (singing along)" },
+    { "id": "phe1-health", "grade": "1", "area": "Physical and Health Education", "label": "Practices that promote health: hygiene" },
+
+    { "id": "elak-letters", "grade": "K", "area": "English Language Arts", "label": "Letter knowledge: letter names and letter-sound matches" },
+    { "id": "elak-phon", "grade": "K", "area": "English Language Arts", "label": "Phonological awareness: rhymes, syllables" },
+    { "id": "elak-print", "grade": "K", "area": "English Language Arts", "label": "Concepts of print: uppercase and lowercase, words" },
+    { "id": "elak-letter-formation", "grade": "K", "area": "English Language Arts", "label": "Letter formation: early writing" },
+    { "id": "mk-number10", "grade": "K", "area": "Mathematics", "label": "Number concepts to 10: counting, linking sets to numerals" },
+    { "id": "mk-make5", "grade": "K", "area": "Mathematics", "label": "Ways to make 5" },
+    { "id": "mk-change10", "grade": "K", "area": "Mathematics", "label": "Change in quantity to 10 (adding and taking away)" },
+    { "id": "mk-patterns", "grade": "K", "area": "Mathematics", "label": "Repeating patterns with 2–3 elements" },
+    { "id": "mk-shapes", "grade": "K", "area": "Mathematics", "label": "Single attributes of 2D shapes; sorting" },
+    { "id": "mk-coins", "grade": "K", "area": "Mathematics", "label": "Financial literacy: names and attributes of coins" },
+    { "id": "scik-cycles", "grade": "K", "area": "Science", "label": "Daily and seasonal changes" },
+    { "id": "artsk-music", "grade": "K", "area": "Arts Education", "label": "Music: beat, rhythm, pitch (singing along)" }
+  ],
+  "skills": {
+    "leo": {
+      "start:": ["ela1-letter-sound"], "find:": ["ela1-letter-sound"], "song:sounds": ["ela1-letter-sound", "arts1-music"],
+      "rhyme:": ["ela1-phon"], "build:": ["ela1-phon"], "cur:syllable": ["ela1-phon"],
+      "cur:case": ["ela1-case"], "word:": ["ela1-words"], "song:abc": ["ela1-case", "arts1-music"],
+      "trace:": ["ela1-letter-formation"],
+      "sentence:": ["ela1-sentence", "ela1-conventions"], "cur:capital": ["ela1-conventions"],
+      "riddle": ["ela1-oral"], "say": ["ela1-oral"],
+      "count": ["m1-number20"], "poppies": ["m1-number20"], "count:stars": ["m1-number20"], "hundred": ["m1-number20", "m1-patterns"],
+      "cur:compare": ["m1-number20"], "cur:skip": ["m1-number20", "m1-patterns"], "song:count": ["m1-number20", "arts1-music"], "song:by": ["m1-number20", "arts1-music"],
+      "cur:make10": ["m1-make10"], "add10": ["m1-addsub"], "sub10": ["m1-addsub"], "cur:addsub20": ["m1-addsub"],
+      "cur:pattern": ["m1-patterns"], "shape:": ["m1-shapes"], "rect:": ["m1-shapes"], "color:": ["m1-shapes"],
+      "cur:coins": ["m1-coins"],
+      "days:": ["sci1-cycles"], "months:": ["sci1-cycles"], "cal:": ["sci1-cycles"], "song:days": ["sci1-cycles", "arts1-music"], "song:months": ["sci1-cycles", "arts1-music"],
+      "tooth": ["phe1-health"]
+    },
+    "lili": {
+      "start:": ["elak-letters"], "cur:name": ["elak-letters"], "song:sounds": ["elak-letters", "artsk-music"], "song:abc": ["elak-letters", "artsk-music"],
+      "rhyme:": ["elak-phon"], "cur:syllable": ["elak-phon"],
+      "cur:case": ["elak-print"], "word:": ["elak-print"],
+      "trace:": ["elak-letter-formation"],
+      "count": ["mk-number10"], "poppies": ["mk-number10"], "count:stars": ["mk-number10"], "count10": ["mk-number10"], "song:count": ["mk-number10", "artsk-music"],
+      "cur:make5": ["mk-make5"], "take5": ["mk-change10"], "add5": ["mk-change10"],
+      "cur:pattern": ["mk-patterns"], "shape:": ["mk-shapes"], "rect:": ["mk-shapes"], "color:": ["mk-shapes"],
+      "cur:coins": ["mk-coins"],
+      "days:": ["scik-cycles"], "cal:": ["scik-cycles"], "song:days": ["scik-cycles", "artsk-music"]
+    }
+  },
+  "pool": {
+    "leo": [
+      { "type": "letters", "mode": "case", "skill": "cur:case", "count": 3 },
+      { "type": "letters", "mode": "syllable", "skill": "cur:syllable", "count": 3 },
+      { "type": "pick", "mode": "custom", "skill": "cur:capital", "count": 2, "choices": 2, "items": [
+        { "q": { "fi": "Kumpi lause on kirjoitettu oikein?", "en": "Which sentence is written correctly?" }, "choices": [{ "e": "✅", "label": "I like my dog." }, { "e": "❌", "label": "i like my dog" }], "answer": 0,
+          "hint": { "fi": "Lause alkaa isolla kirjaimella ja loppuu pisteeseen.", "en": "A sentence starts with a capital and ends with a period." }, "explain": { "fi": "Iso I alussa ja piste lopussa.", "en": "Capital I at the start and a period at the end." } },
+        { "q": { "fi": "Kumpi lause on kirjoitettu oikein?", "en": "Which sentence is written correctly?" }, "choices": [{ "e": "✅", "label": "Leo can run." }, { "e": "❌", "label": "leo can run" }], "answer": 0,
+          "hint": { "fi": "Nimet alkavat isolla kirjaimella.", "en": "Names start with a capital letter." }, "explain": { "fi": "Leo alkaa isolla L:llä, ja lopussa on piste.", "en": "Leo starts with a capital L, and there is a period at the end." } },
+        { "q": { "fi": "Kumpi kysymys on kirjoitettu oikein?", "en": "Which question is written correctly?" }, "choices": [{ "e": "✅", "label": "Can you see it?" }, { "e": "❌", "label": "can you see it." }], "answer": 0,
+          "hint": { "fi": "Kysymyksen loppuun tulee kysymysmerkki.", "en": "A question ends with a question mark." }, "explain": { "fi": "Iso C alussa ja kysymysmerkki lopussa.", "en": "Capital C at the start and a question mark at the end." } }
+      ] },
+      { "type": "math", "op": "make", "target": 10, "skill": "cur:make10", "count": 3 },
+      { "type": "math", "op": "compare", "max": 20, "skill": "cur:compare", "count": 3 },
+      { "type": "math", "op": "mix", "max": 20, "skill": "cur:addsub20", "count": 3 },
+      { "type": "hundred", "step": 2, "max": 20, "skill": "cur:skip2", "count": 2 },
+      { "type": "hundred", "step": 5, "max": 50, "skill": "cur:skip5", "count": 2 },
+      { "type": "hundred", "step": 10, "max": 100, "skill": "cur:skip10", "count": 2 },
+      { "type": "pattern", "skill": "cur:pattern", "count": 3 },
+      { "type": "coins", "mode": "value", "skill": "cur:coins", "count": 2 },
+      { "type": "coins", "mode": "count", "skill": "cur:coins-count", "count": 2 },
+      { "type": "song", "song": "days", "mode": "gap", "skill": "song:days" },
+      { "type": "song", "song": "months", "mode": "gap", "skill": "song:months" },
+      { "type": "song", "song": "count20", "mode": "gap", "skill": "song:count20" },
+      { "type": "song", "song": "by2", "mode": "gap", "skill": "song:by2" },
+      { "type": "song", "song": "by5", "mode": "gap", "skill": "song:by5" },
+      { "type": "song", "song": "by10", "mode": "gap", "skill": "song:by10" },
+      { "type": "song", "song": "abc", "mode": "gap", "skill": "song:abc", "gaps": 3 }
+    ],
+    "lili": [
+      { "type": "letters", "mode": "name", "skill": "cur:name", "count": 3 },
+      { "type": "letters", "mode": "case", "skill": "cur:case", "count": 2, "choices": 2 },
+      { "type": "letters", "mode": "syllable", "skill": "cur:syllable", "count": 2, "words": ["dog", "cat", "apple", "rabbit", "banana", "sun"] },
+      { "type": "math", "op": "make", "target": 5, "skill": "cur:make5", "count": 2 },
+      { "type": "math", "op": "add", "skill": "add5", "count": 3 },
+      { "type": "math", "op": "sub", "skill": "take5", "count": 3 },
+      { "type": "count", "skill": "count10", "min": 4, "max": 10, "count": 2 },
+      { "type": "pattern", "skill": "cur:pattern", "count": 2 },
+      { "type": "coins", "mode": "name", "skill": "cur:coins", "count": 2, "coins": ["nickel", "dime", "quarter", "loonie", "toonie"] },
+      { "type": "song", "song": "days", "mode": "gap", "skill": "song:days", "gaps": 1 },
+      { "type": "song", "song": "count10", "mode": "gap", "skill": "song:count10", "gaps": 1 },
+      { "type": "song", "song": "days", "mode": "order", "skill": "song:days-order", "limit": 4 }
+    ]
+  }
+}
